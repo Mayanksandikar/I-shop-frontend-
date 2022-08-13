@@ -13,15 +13,28 @@ const Header = () => {
          .... <span className="span2">Welcome</span> <span className="span"> to </span> I-SHOP....
         </div>
         <div className='page-section'>
-          <p><Link to='' className="none">Home</Link></p>
-          <p><Link to='/accessories' className="none">Accessories</Link></p>
+        <div class="dropdown">
 
-          <p><Link to='/mobile' className="none">Mobile</Link></p>
-          <p><Link to='/ipad' className="none">Ipad</Link></p>
-          <p><Link to='/laptop' className="none">Laptop</Link></p>
-          <p><Link to='/macbook' className="none">MacBook</Link></p>
+          <p><Link to='' className="none dropbtn">Home</Link></p>
+        
+        <div className="dropdown-content">
+        <a href="/accessories">Accessories</a>
+         <a href="/mobile">Mobile</a>
+       <a href="/ipad">Ipad</a>
+       
+       <a href="/macbook">MacBook</a>
+       </div>
+       </div>
+          <p><Link to='/accessories' className="none dropbtn">Accessories</Link></p>
+
+          <p><Link to='/mobile' className="none dropbtn">Mobile</Link></p>
+          <p><Link to='/ipad' className="none dropbtn">Ipad</Link></p>
+          
+          <p><Link to='/macbook' className="none dropbtn">MacBook</Link></p>
         </div>
+  
     </div>
+
   )
 }
 
